@@ -35,7 +35,7 @@ class TemaController extends Controller
             'nombre'=> array('required','unique:temas')
         ];
 
-        $destacado=$request->destacado;
+        //$destacado=$request->destacado;
         $suscripcion=$request->suscripcion;
 
         if($destacado && $suscripcion)

@@ -82,7 +82,7 @@
                                 </div>
                             @endif
                           
-                        <table class="table table-bordered table-striped table-sm">
+                        <table class="table table-bordered table-sm table-hover">
                             <thead>
                                 <tr>
                                     <th>Opciones</th>
@@ -96,7 +96,7 @@
                             <tbody>
                             
                             @foreach($articulos as $articulo)
-                                <tr>
+                                <tr @if(  $articulo->activo == 0) class="table-danger" @endif>
                                     <td>
                                     <a href="{{ route('moderador.articulos.edit',$articulo->id) }}"><button  type="button" class="btn btn-primary btn-sm"><i class="icon-pencil"></i>
                                     </button></a>&nbsp;

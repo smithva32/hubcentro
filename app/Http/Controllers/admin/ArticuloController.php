@@ -22,7 +22,7 @@ class ArticuloController extends Controller
     { 
         $miga='Artículos';
         $todosArticulos=Articulo::withoutGlobalScope('activo')->count();
-        $articulos=Articulo::withoutGlobalScope('activo')->with(['user','tema'])->orderBy('id','desc')->paginate(10);
+        $articulos=Articulo::withoutGlobalScope('activo')->with(['user','tema'])->orderBy('id','desc')->paginate(7);
         return view('admin.articulos.index')->with(compact('miga','articulos', 'todosArticulos'));
     }
 

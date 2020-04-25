@@ -41,7 +41,7 @@
                                 </div>
                             @endif
                           
-	<table class="table table-bordered table-striped table-sm">
+	<table class="table table-bordered table-sm table-hover">
 		<thead >
 			<tr>
 			  <th>Opciones</th>
@@ -56,7 +56,7 @@
 		
 			<tbody>
 			@foreach($temas as $tema) 
-				<tr>
+				<tr >
 				  <td>
 				  <a href="{{  route('tema.edit',$tema) }}"><button  type="button" class="btn btn-primary btn-sm"><i class="icon-pencil"></i>
                   </button></a>&nbsp;

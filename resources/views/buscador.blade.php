@@ -5,7 +5,7 @@
 @section('content')
 
 
-<section class="features3 cid-rPhPXVhNu6" id="features3-8" style="padding-top: 10px">
+<section class="features3 cid-rPhPXVhNu6" id="features3-8" style="padding-top: 95px">
     @if(!isset($articulosPermitidos))
     <div class="container">
      
@@ -30,16 +30,12 @@
                  <div class="card-box" style="text-align : justify;">
                      <p class="mbr-section-text lead" style="text-align : justify; FONT-SIZE: 12px;">  <span class="mbri-clock mbr-iconfont mbr-iconfont-btn "></span> {{ $articulo->created_at->locale('es')->diffForHumans()   }}</p>  
                  </div>
-                 <div class="mbr-section-btn text-center d-none d-sm-none d-md-block">
+                 <div class="mbr-section-btn text-center">
                     <a class="btn btn-primary btn-sm display-4" data-toggle="modal" data-target="#a{{$articulo->id}}">
                          Leer mas
                     </a>
                  </div>
-                 <div class="mbr-section-btn text-center d-block d-sm-block d-md-none">
-                     <a class="btn btn-primary btn-sm display-4" data-toggle="modal" data-target="#ab{{$articulo->id}}">
-                         Leer mas
-                     </a>
-                 </div>
+                
              </div>
          </div>
 
@@ -98,9 +94,7 @@
     </div>
     @else
     <div class="container">
-    <div class="card p-3 col-6 col-md-6 col-lg-2" style="text-align : justify; FONT-SIZE: 14px; background:black" class="card-wrapper sm">
-             <div style="text-align : justify; FONT-SIZE: 14px; color: white;">{{$articulosPermitidos->count()}}  &nbsp; Articulos</div>
-    </div>
+  
     
      <div class="row">
         
@@ -124,16 +118,12 @@
                  <div class="card-box" style="text-align : justify;">
                      <p class="mbr-section-text lead" style="text-align : justify; FONT-SIZE: 12px;">  <span class="mbri-clock mbr-iconfont mbr-iconfont-btn "></span> {{ $articulo->created_at->locale('es')->diffForHumans()   }}</p>  
                  </div>
-                 <div class="mbr-section-btn text-center d-none d-sm-none d-md-block">
+                 <div class="mbr-section-btn text-center">
                      <a class="btn btn-primary btn-sm display-4" data-toggle="modal" data-target="#a{{$articulo->id}}">
-                         Leer PC
+                         Leer mas
                      </a>
                  </div>
-                 <div class="mbr-section-btn text-center d-block d-sm-block d-md-none">
-                     <a class="btn btn-primary btn-sm display-4" data-toggle="modal" data-target="#ab{{$articulo->id}}">
-                         Leer MOVIL
-                     </a>
-                 </div>
+                
              </div>
          </div>
              @endforeach

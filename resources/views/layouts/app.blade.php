@@ -66,8 +66,8 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <form class="form-inline navbar-form navbar-left" action="{{ url('/buscador') }}" method="GET">
                 @csrf
-                <input style="border-radius: 10px; width:75; font-size:12px; margin-top: 6px;" class="form-control" name="busqueda" type="text" placeholder="Busqueda" aria-label="Search">
-                <button style="border-radius: 10px; margin-top: 12px;" class="btn btn-outline-light" type="submit">Buscar</button>
+                <input style="border-radius: 10px; width:75; font-size:12px; margin-top: 2px; background-color:transparent; color:white;" class="form-control" name="busqueda" type="text" placeholder="Busqueda" aria-label="Search">
+                <button style="border-radius: 10px; margin-top: 8px" class="btn btn-outline-light" type="submit">Buscar</button>
     </form>
           <!--inicio del ul o menu -->
         <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
