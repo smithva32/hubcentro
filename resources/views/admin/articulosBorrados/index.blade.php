@@ -112,7 +112,7 @@
                                                                                     <div class="row" style="justify-content: center; display:inline-block ">
                                                                                         @foreach($imagenes as $imagen)
                                                                                             @if($articulo->id === $imagen->articulo_id)
-                                                                                            <img src="{{ Storage::url('imagenesArticulos/'.$imagen->nombre) }}">
+                                                                                            <img style="width:250px" src="{{ Storage::url('imagenesArticulos/'.$imagen->nombre) }}">
                                                                                             @endif
                                                                                         @endforeach
                                                                                     </div>

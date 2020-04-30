@@ -103,7 +103,7 @@
                                                                                    
                                                                                     <div class="row" style="justify-content: center; display:inline-block ">
                                                                                         @foreach($articulo->imagenes as $imagen)
-                                                                                            <img src="{{ Storage::url('imagenesArticulos/'.$imagen->nombre) }}">
+                                                                                            <img style="width:250px" src="{{ Storage::url('imagenesArticulos/'.$imagen->nombre) }}">
                                                                                         @endforeach
                                                                                     </div>
                                                                                 </div>
