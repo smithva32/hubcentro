@@ -9,7 +9,6 @@ use Jenssegers\Date\Date;
 
 class User extends Authenticatable implements MustVerifyEmail
 {
-    //Prueba GITHUB
 
     use Notifiable;
     use TraductorFechas;
