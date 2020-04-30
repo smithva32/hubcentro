@@ -107,7 +107,7 @@
                                                                                 <div style="margin-top:10px; margin-bottom:20px; text-align:center; FONT-SIZE:25px" >
                                                                                     <b>{{ $articulo->titulo }}</b>
                                                                                 </div>
-
+c                                                                                                                                                                                                                                                   
                                                                                 <div>
                                                                                     <div class="row" style="justify-content: center; display:inline-block ">
                                                                                         @foreach($imagenes as $imagen)
